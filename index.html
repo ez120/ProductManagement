@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- File-Main-css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- File-Media-css -->
+  <link rel="stylesheet" href="media.css">
+  <!-- File-nor-css -->
+  <link rel="stylesheet" href="nor.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+  <div class="contenr">
+      <h1>CARDS</h1>
+      <p>product management system </p>
+    </div>
+  </header>
+  <section class="sec-1">
+    <div class="contenr">
+    <input type="text" name="" placeholder="Name" id="Name">
+    <div class="flex-4">
+      <input type="number" name="" placeholder="Price" id="Price">
+      <input type="number" name="" placeholder="Taxes" id="Taxes">
+      <input type="number" name="" placeholder="ADS" id="ADS">
+      <input type="number" name="" placeholder="Discount" id="Discount">
+      <p id="total">TOTAL:0</p>
+    </div>
+    <input type="number" name="" placeholder="Count"  id="Count">
+    <input type="text" name="" placeholder="Category" id="Category">
+    <button class="cre" id="create">Create</button>
+    </div>
+  </section>
+  <section class="sec-2">
+    <div class="contenr">
+    <input type="text" name="" onkeyup="searchData(this.value)" placeholder="Search" id="Search">
+    <button onclick="getSearchMood(this.id)" id="searchName" class="cre left">Search By Name</button>
+    <button onclick="getSearchMood(this.id)" id="searchCategory" class="cre">Search By Category</button>
+    <button class="cre" id="delAll" onclick="allDele()" style="margin-top: 10px; display: none; width: 100%;">Delete All</button>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Taxes</th>
+        <th>ADS</th>
+        <th>Discount</th>
+        <th>Total</th>
+        <th>Category</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </tr>
+      <tbody id="Tbody">
+        
+      </tbody>
+    </table>
+    </div>
+  </section>
+  <script src="java.js"></script>
+</body>
+</html>

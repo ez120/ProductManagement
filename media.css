@@ -1,0 +1,28 @@
+@media (max-width:768px) {
+  .contenr{
+  width: 730px;
+}
+.left , button{
+  width: 100%;
+  margin-bottom: 10px;
+}
+}
+/* Medium width  */
+@media (min-width:992px) {
+  .contenr{
+  width: 970px;
+}}
+@media (max-width:991px) {
+.left,
+button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+}
+/* large width */
+@media (min-width:1200px) {
+  .contenr{
+  width: 1170px;
+}
+}
